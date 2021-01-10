@@ -5,6 +5,10 @@ This code was executed in google colab
 
 The reference code was taken from https://github.com/doronharitan/human_activity_recognition_LRCN
 
+datasets can be found at :
+https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads
+https://actions.stair.center/videos.html
+
 data_preprocess.py - has the code to preprocess the data.
 
 training.py - has the code to train the model.

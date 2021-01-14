@@ -18,3 +18,6 @@ Run the training.py file to train the network using the sampled videos obtained 
 
 
 Finally use findMoments.py file to predict the moments from youtube video. You have to specify the model checkpoint path and the test video path. This file will predict the moments and save them in the json format which could be uploaded on the ilab website.
+
+The best model could be directly downloaded from the below link. The test video for finding moments is also present here.
+https://drive.google.com/drive/folders/1w-6lbP_vI7hp2Kd1nchZ6HHafaS6-F3J?usp=sharing

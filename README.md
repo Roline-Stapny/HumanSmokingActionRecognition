@@ -1,20 +1,20 @@
 # Human_Smoking_Action_Recognition
-LSTM+CNN architecture is applied to identify human smoking actions from videos
 
-This code was executed in google colab
+This project mainly aims to identify human smoking actions from videos. LRCN architecture is applied to identify human smoking actions from videos. This work was motivated and referenced from https://github.com/doronharitan/human_activity_recognition_LRCN. 
 
-The reference code was taken from https://github.com/doronharitan/human_activity_recognition_LRCN
+HMDB51 and STAIR Actions dataset are used in this project
+datasets can be downloaded at 
+https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads https://actions.stair.center/videos.html
 
-datasets can be found at :
-https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads
-https://actions.stair.center/videos.html
+The project is sectioned into 3 parts. 
+1. Pre-processing
+2. Training
+3. Finding Moments
 
-data_preprocess.py - has the code to preprocess the data.
+The first step is to download the dataset and preprocess it. After downloading the dataset use 'data_preprocess.py' file to preprocess the dataset. Make sure to change the path appropriately. This code takes the videos as input and samples them and creates videos with 15 frames. 
 
-training.py - has the code to train the model.
 
-findMoments.py - has the code get the moments from the youtube video.
+Run the training.py file to train the network using the sampled videos obtained from after preprocessing. Make sure to change the path names appropriately. You can also change the values of the hyperparameters to improve the model performance. This code saves the model checkpoints, the loss values and other results in the specified folder.
 
-First preprocess the video dataset using data_preprocess.py. The output of this will be sampled frame video.
-Run the training.py file to train the model using the output of data_preprocess file. Change the parameters according to your requirements in this file. The model checkpoints are saved in the specified location.
-Finally use findMoments.py file to predict the moments from youtube video. You have to specify the model checkpoint path and the video path here. This file will predict the moments and save them in the json format which could be uploaded on the ilab website.
+
+Finally use findMoments.py file to predict the moments from youtube video. You have to specify the model checkpoint path and the test video path here. This file will predict the moments and save them in the json format which could be uploaded on the ilab website.

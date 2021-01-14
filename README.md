@@ -17,4 +17,4 @@ The first step is to download the dataset and preprocess it. After downloading t
 Run the training.py file to train the network using the sampled videos obtained from after preprocessing. Make sure to change the path names appropriately. You can also change the values of the hyperparameters to improve the model performance. This code saves the model checkpoints, the loss values and other results in the specified folder.
 
 
-Finally use findMoments.py file to predict the moments from youtube video. You have to specify the model checkpoint path and the test video path here. This file will predict the moments and save them in the json format which could be uploaded on the ilab website.
+Finally use findMoments.py file to predict the moments from youtube video. You have to specify the model checkpoint path and the test video path. This file will predict the moments and save them in the json format which could be uploaded on the ilab website.
